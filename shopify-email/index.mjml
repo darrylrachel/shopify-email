@@ -1,0 +1,120 @@
+<mjml>
+  <mj-head>
+    <mj-style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .link-color {
+        color: #004c3f;
+        text-decoration: none;
+      }
+      
+      .link-color:hover {
+        color: #004c3f;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+      .small-link-color {
+        color: #008060;
+        text-decoration: none;
+      }
+
+      .small-link-color:hover {
+        color: #008060;
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      .footer-links {
+        color: #000000;
+        text-text-decoration: none;
+      }
+      .footer-links:hover {
+        color: #004c3f;
+        text-text-decoration: none;
+      }
+    </mj-style>
+
+    <mj-style inline="inline">
+      .header {
+        background-color: #004c3f;
+      }
+
+      .section-padding {
+        padding-left: 30px;
+        pading-right: 30px;
+      }
+
+      .icon-size {
+        max-width: 280px;
+        padding: 40px 0 60px;
+      }
+
+      .footer {
+        background-image: url('http://127.0.0.1:5500//assets/bg-colors.png');
+        background-size: 600px;
+      }
+
+      .content-background {
+        background-color: #ffffff;
+      }
+    
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f2f2f2">
+    <mj-section css-class="content-background">
+      <mj-include path="./components/header.mjml" />
+      <mj-raw>
+        <!-- Top section -->
+      </mj-raw>
+      <mj-section>
+        <mj-column padding="20px 0 30px 0">
+          <mj-text css-class="header-title" font-size="58px" color="#004c3f" font-weight="bold">What's New</mj-text>
+          <mj-text css-class="header-title" font-size="18px" color="#004c3f" font-weight="normal">July 18, 2023</mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./components/three-lines.mjml" />
+      <mj-section>
+        <mj-raw>
+          <!-- Two column image with text -->
+        </mj-raw>
+        <mj-column>
+          <mj-image href="https:shopify.com/blog" padding-bottom="20px" src="http://127.0.0.1:5500//assets/image.jpg" />
+        </mj-column>
+        <mj-column>
+          <mj-text color="#004c3f" font-size="24px" font-weight="bold" padding-bottom="20px"><a class="link-color" href="https://shopify.com/blog">Find more ways to sell with pre-orders</a></mj-text>
+
+          <mj-text color="#004c3f" font-size="16px" line-height="20px" font-weight="normal" padding-bottom="20px">We've gone and made selling even easier with pre-orders. Give your customers the ability to pay now, pay a deposit, or pay later, and in the process increase your sales, forecast demand, and create buzz for your products.
+          </mj-text>
+
+          <mj-text color="#008060" font-size="14px" line-height="20px" font-weight="bold" padding-bottom="20px"><a class="small-link-color" href="">Learn More</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-include path="./components/three-lines.mjml" />
+
+      <mj-section padding="40px 40px 20px 40px">
+        <mj-column>
+          <mj-text align="center" line-height="20px" color="#212b35" font-weight="bold" font-size="20px">
+            Running a business like yours isn't a desk job.
+            Keep it from becoming one with the shopify app.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding="0">
+        <mj-group>
+          <mj-column padding="0">
+            <mj-image padding="0 5px" align="right" href="https://apple.com" src="http://127.0.0.1:5500/assets/appstore.png" width="150px" height="43px" />
+          </mj-column>
+          <mj-column padding="0">
+            <mj-image padding="0 5px" align="left" href="https://apple.com" src="http://127.0.0.1:5500/assets/android.png" width="150px" height="43px" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-include path="./components/footer.mjml" />
+    </mj-section>
+  </mj-body>
+</mjml>
